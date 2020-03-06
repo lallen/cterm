@@ -1,0 +1,41 @@
+current directory: /home/lallen/dev/projects/cterm/vendor/bundle/ruby/2.5.0/gems/pg-1.2.2/ext
+/usr/bin/ruby2.5 -I /usr/local/lib/site_ruby/2.5.0 -r ./siteconf20200306-4278-jihbex.rb extconf.rb --with-pg-config\=/Applications/Postgres.app/Contents/Versions/1.2.2/bin/pg_config
+Using config values from /Applications/Postgres.app/Contents/Versions/1.2.2/bin/pg_config
+sh: 1: /Applications/Postgres.app/Contents/Versions/1.2.2/bin/pg_config: not found
+sh: 1: /Applications/Postgres.app/Contents/Versions/1.2.2/bin/pg_config: not found
+checking for libpq-fe.h... no
+Can't find the 'libpq-fe.h header
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/usr/bin/$(RUBY_BASE_NAME)2.5
+	--with-pg
+	--without-pg
+	--enable-windows-cross
+	--disable-windows-cross
+	--with-pg-config
+	--with-pg-dir
+	--without-pg-dir
+	--with-pg-include
+	--without-pg-include=${pg-dir}/include
+	--with-pg-lib
+	--without-pg-lib=${pg-dir}/lib
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/lallen/dev/projects/cterm/vendor/bundle/ruby/2.5.0/extensions/x86_64-linux/2.5.0/pg-1.2.2/mkmf.log
+
+extconf failed, exit code 1
