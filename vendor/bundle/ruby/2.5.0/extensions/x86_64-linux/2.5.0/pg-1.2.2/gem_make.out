@@ -1,41 +1,53 @@
 current directory: /home/lallen/dev/projects/cterm/vendor/bundle/ruby/2.5.0/gems/pg-1.2.2/ext
-/usr/bin/ruby2.5 -I /usr/local/lib/site_ruby/2.5.0 -r ./siteconf20200306-6813-1ww4pf5.rb extconf.rb --with-pg-config\=/Applications/Postgres.app/Contents/Versions/1.2.2/bin/pg_config
-Using config values from /Applications/Postgres.app/Contents/Versions/1.2.2/bin/pg_config
-sh: 1: /Applications/Postgres.app/Contents/Versions/1.2.2/bin/pg_config: not found
-sh: 1: /Applications/Postgres.app/Contents/Versions/1.2.2/bin/pg_config: not found
-checking for libpq-fe.h... no
-Can't find the 'libpq-fe.h header
-*** extconf.rb failed ***
-Could not create Makefile due to some reason, probably lack of necessary
-libraries and/or headers.  Check the mkmf.log file for more details.  You may
-need configuration options.
+/usr/bin/ruby2.5 -I /usr/local/lib/site_ruby/2.5.0 -r ./siteconf20200306-11782-c9ozpj.rb extconf.rb
+checking for pg_config... yes
+Using config values from /usr/bin/pg_config
+checking for libpq-fe.h... yes
+checking for libpq/libpq-fs.h... yes
+checking for pg_config_manual.h... yes
+checking for PQconnectdb() in -lpq... yes
+checking for PQsetSingleRowMode()... yes
+checking for PQconninfo()... yes
+checking for PQsslAttribute()... yes
+checking for PQresultVerboseErrorMessage()... yes
+checking for PQencryptPasswordConn()... yes
+checking for PQresultMemorySize()... no
+checking for timegm()... yes
+checking for rb_gc_adjust_memory_usage()... yes
+checking for unistd.h... yes
+checking for inttypes.h... yes
+checking for C99 variable length arrays... yes
+creating extconf.h
+creating Makefile
 
-Provided configuration options:
-	--with-opt-dir
-	--without-opt-dir
-	--with-opt-include
-	--without-opt-include=${opt-dir}/include
-	--with-opt-lib
-	--without-opt-lib=${opt-dir}/lib
-	--with-make-prog
-	--without-make-prog
-	--srcdir=.
-	--curdir
-	--ruby=/usr/bin/$(RUBY_BASE_NAME)2.5
-	--with-pg
-	--without-pg
-	--enable-windows-cross
-	--disable-windows-cross
-	--with-pg-config
-	--with-pg-dir
-	--without-pg-dir
-	--with-pg-include
-	--without-pg-include=${pg-dir}/include
-	--with-pg-lib
-	--without-pg-lib=${pg-dir}/lib
+current directory: /home/lallen/dev/projects/cterm/vendor/bundle/ruby/2.5.0/gems/pg-1.2.2/ext
+make "DESTDIR=" clean
 
-To see why this extension failed to compile, please check the mkmf.log which can be found here:
+current directory: /home/lallen/dev/projects/cterm/vendor/bundle/ruby/2.5.0/gems/pg-1.2.2/ext
+make "DESTDIR="
+compiling gvl_wrappers.c
+compiling pg.c
+compiling pg_binary_decoder.c
+compiling pg_binary_encoder.c
+compiling pg_coder.c
+compiling pg_connection.c
+compiling pg_copy_coder.c
+compiling pg_errors.c
+compiling pg_record_coder.c
+compiling pg_result.c
+compiling pg_text_decoder.c
+compiling pg_text_encoder.c
+compiling pg_tuple.c
+compiling pg_type_map.c
+compiling pg_type_map_all_strings.c
+compiling pg_type_map_by_class.c
+compiling pg_type_map_by_column.c
+compiling pg_type_map_by_mri_type.c
+compiling pg_type_map_by_oid.c
+compiling pg_type_map_in_ruby.c
+compiling pg_util.c
+linking shared-object pg_ext.so
 
-  /home/lallen/dev/projects/cterm/vendor/bundle/ruby/2.5.0/extensions/x86_64-linux/2.5.0/pg-1.2.2/mkmf.log
-
-extconf failed, exit code 1
+current directory: /home/lallen/dev/projects/cterm/vendor/bundle/ruby/2.5.0/gems/pg-1.2.2/ext
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 pg_ext.so ./.gem.20200306-11782-s8ktae
