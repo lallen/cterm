@@ -1,5 +1,5 @@
 current directory: /home/lallen/dev/projects/cterm/vendor/bundle/ruby/2.5.0/gems/pg-1.2.2/ext
-/usr/bin/ruby2.5 -I /usr/local/lib/site_ruby/2.5.0 -r ./siteconf20200306-4278-jihbex.rb extconf.rb --with-pg-config\=/Applications/Postgres.app/Contents/Versions/1.2.2/bin/pg_config
+/usr/bin/ruby2.5 -I /usr/local/lib/site_ruby/2.5.0 -r ./siteconf20200306-6813-1ww4pf5.rb extconf.rb --with-pg-config\=/Applications/Postgres.app/Contents/Versions/1.2.2/bin/pg_config
 Using config values from /Applications/Postgres.app/Contents/Versions/1.2.2/bin/pg_config
 sh: 1: /Applications/Postgres.app/Contents/Versions/1.2.2/bin/pg_config: not found
 sh: 1: /Applications/Postgres.app/Contents/Versions/1.2.2/bin/pg_config: not found
