@@ -12,7 +12,7 @@ module Cterm
     config.load_defaults 5.2
 
     # Configure assets path
-    s.paths << Rails.root.join('vendor', 'assets', 'components')
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
