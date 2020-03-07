@@ -14,3 +14,15 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//
+//
+////= require jquery
+//= require jquery_ujs
+//= require turbolinks
+//= require_tree .
+//= require materialize
+//
+// Bower packages
+//= require d3
+//= require underscore
+//
