@@ -1,2 +1,4 @@
 # cterm
-private crypto terminal.
+Dashboard for cryptocurrency information.
+
+https://cterm.herokuapp.com/
