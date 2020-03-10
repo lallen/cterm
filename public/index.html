@@ -22,46 +22,10 @@
   <body class="blue-grey lighten-4">
 
 
-    <!--Chat-->
-    <script id="cid0020000181365211035" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 170px;height: 418px;">
-      {
-        "handle": "ctermio",
-        "arch": "js",
-        "styles": {
-          "a": "e0e0e0",
-          "b": 90,
-          "c": "000000",
-          "d": "000000",
-          "f": 90,
-          "i": 90,
-          "k": "e0e0e0",
-          "l": "e0e0e0",
-          "m": "e0e0e0",
-          "o": 90,
-          "p": "10",
-          "q": "81c784",
-          "r": 90,
-          "usricon": 0,
-          "pos": "br",
-          "cv": 1,
-          "cvbg": "CC0000",
-          "cvw": 200,
-          "cvh": 30,
-          "cnrs": "0.35",
-          "ticker": 1,
-          "fwtickm": 1
-        }
-      }
-    </script>
-
-
-
     <!--Mobile / Drop down menu-->
     <nav class="green lighten-2">
       <div class="nav-wrapper" container>
-        <img src="logo.jpg" class="brand-logo" alt="+_+" WIDTH=60 HEIGHT=40>
         <a href="#!" class="brand-logo" style="left:150">cTerminal</a>
-
 
 
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -93,33 +57,8 @@
 
 
 
-
       <br>
       <br>
-
-
-      <!--Terminal Scrag-->
-
-      <div id="terminal"></div>
-
-
-
-      <script>
-
-
-
-        import { Terminal } from 'xterm';
-        import * as fit from 'xterm/lib/addons/fit/fit';
-
-       Terminal.applyAddon(fit);
-        term.open(document.getElementById('#terminal'));
-        term.write('Hello from \033[1;3;31mxterm.js\033[0m $ ')
-        term.resize(100, 100);
-
-
-
-
-      </script>
 
 
     </div>
