@@ -46,17 +46,39 @@
 
       </div>
 
-
     </nav>
 
-    <div class="horizontal card-panel center-align z-depth-4">
-      <h5 class="left-align"> Values:</h5>
+    <table style="width:100%">
+      <tr>
+        <th>
+          <div class="horizontal card-panel left-align z-depth-4">
+            <h5 class="left-align"> <b>Values:</b> </h5>
 
-      <br>
-      <br>
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <div id="tradingview_00cca"></div>
+              <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/COINBASE-BTCUSD/"
+                  rel="noopener" target="_blank"><span class="blue-text">BTCUSD Chart</span></a> by TradingView</div>
+
+            </div>
+            <!-- TradingView Widget END -->
 
 
-    </div>
+          </div>
+        </th>
+       <!-- <th>
+          <div class="horizontal card-panel left-align z-depth-4">
+            <h5 class="left-align"> Trades:</h5>
+
+            <a class="btn waves-effect waves-light orange lighten-2 left" <a href="trade.html" target="_blank"
+              class="black-text"> Bitcoin </a>
+              <br>
+
+          </div>
+        </th>-->
+      </tr>
+    </table>
+
     </div>
 
 
@@ -65,46 +87,32 @@
 
       </div>
 
-      <div class="horizontal card-panel center-align z-depth-4">
-        <h5 class="left-align"> Trades:</h5>
-
-
-
-        <a class="btn waves-effect waves-light orange lighten-2 left" <a href="trade.html" target="_blank" class="black-text"> Bitcoin </a>
-
-        <br>
-
-
-      </div>
     </div>
     </div>
-
 
     <div class="row ">
-      <div class="col l4">
 
-      </div>
-      <div class="horizontal card-panel center-align z-depth-4">
-        <h5 class="left-align"> Twitter: </h5>
+      <div class="horizontal card-panel left-align z-depth-4">
+        <h5 class="left-align"> <b>Twitter:</b> </h5>
 
 
         <!--Twitter feed-->
         <div class="card-small">
-          <a class="twitter-timeline" href="https://twitter.com/followingell/lists/quality-crypto?ref_src=twsrc%5Etfw"></a>
+          <a class="twitter-timeline"
+            href="https://twitter.com/followingell/lists/quality-crypto?ref_src=twsrc%5Etfw"></a>
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
           <script type="text/javascript">
-            (function() {
+            (function () {
               var ticker = document.createElement('script');
               ticker.type = 'text/javascript';
               ticker.async = true;
-              ticker.src = 'https://embed.twitcker.com/ticker/cTerminal_io.js?open=true&hide-logo=true&container=own-container&own-container=%3Cdiv+class%3D%22card+panel%22%3E+%3C%2Fdiv%3E';
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ticker);
+              ticker.src =
+                'https://embed.twitcker.com/ticker/cTerminal_io.js?open=true&hide-logo=true&container=own-container&own-container=%3Cdiv+class%3D%22card+panel%22%3E+%3C%2Fdiv%3E';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(
+                ticker);
             })();
           </script>
-
-        </div>
-        <div class="row">
 
         </div>
         <div class="container">
@@ -112,25 +120,14 @@
             <div class="col l4">
 
             </div>
-
-
-
           </div>
         </div>
 
-
-
         <!--Footer-->
-        <footer class="page-footer green lighten-2" style="position:fixed;bottom:0;left:0;width:100%;padding:0px 0px 0px 0px;">
+        <footer class="page-footer green lighten-2"
+          style="position:fixed;bottom:0;left:0;width:100%;padding:0px 0px 0px 0px;">
 
         </footer>
-
-
-
-
-
-
-
 
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -141,6 +138,26 @@
         <!--Collapseable side Nav-->
         <script>
           $(".button-collapse").sideNav();
+        </script>
+
+        <!--Trading View Chart-->
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            "autosize": false,
+            "width": 1000,
+            "height": 400,
+            "symbol": "COINBASE:BTCUSD",
+            "interval": "5",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "allow_symbol_change": true,
+            "container_id": "tradingview_00cca"
+          });
         </script>
 
 
